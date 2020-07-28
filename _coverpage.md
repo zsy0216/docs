@@ -8,4 +8,4 @@
 
 
 [GitHub](https://github.com/zsy0216/)
-[Get Started](/)
+[Get Started](https://zsy0216.github.io/docs/#/)
