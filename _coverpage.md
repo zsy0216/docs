@@ -1,6 +1,7 @@
-<!-- _coverpage.md -->
+<!-- _coverpage.md ![logo](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/head2.jpg)-->
 
-![logo](_media/icon.svg)
+![logo](https://docsify.js.org/_media/icon.svg)
+
 
 # Ep流苏
 
@@ -8,4 +9,4 @@
 
 
 [GitHub](https://github.com/zsy0216/)
-[Get Started](https://zsy0216.github.io/docs/#/)
+[Get Started](https://zsy0216.github.io/docs/#/?id=headline)
