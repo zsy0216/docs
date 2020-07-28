@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  
+  <style>
+
+  
+      /*侧边栏*/
+    .sidebar {
+      padding-top: 6px;
+    }
+
+    aside.sidebar ul li {
+      margin: 0;
+      position: relative;
+    }
+
+    aside.sidebar ul li ul {
+      margin: 6px 0;
+    }
+
+    aside.sidebar ul li p {
+      padding-left: 22px;
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    aside.sidebar ul li a {
+      line-height: 35px;
+      font-size: 14px;
+      padding: 3px 0 3px 22px;
+    }
+
+    aside.sidebar ul li.active > a {
+      font-size: 16px !important;
+    }
+
+    aside.sidebar ul li.active > a:before {
+      content: '' !important;
+      position: absolute !important;
+      margin: 0 !important;
+      width: 10px !important;
+      height: 10px !important;
+      top: 15px !important;
+      left: 0px !important;
+      border-radius: 50% !important;
+      background-color: #fed24a !important;
+      box-shadow: 0 0 0 3px rgba(254, 210, 74, 0.4) !important;
+    }
+
+    /*以上调侧边栏*/
+	
+	/*代码块背景*/
+    p code{
+      background-color: rgb(255, 255, 255) !important;
+    }
+
+    .markdown-section p.tip,
+    .markdown-section tr:nth-child(1n) {
+      font-size: 16px !important;
+    }
+
+    .markdown-section h1 {
+      margin: 3rem 0 2rem 0;
+    }
+
+    .markdown-section h2 {
+      margin: 2rem 0 1rem;
+    }
+    img,
+    pre {
+      border-radius: 5px;
+    }
+	
+	/*添加代码块复制按钮样式*/
+    .docsify-copy-code-button {
+      background: #00a1d6 !important;
+      color: #FFFFFF !important;
+      font-size: 13px !important;
+    }
+
+    ::after{
+      color: #9da2fd !important;
+      font-size: 13px !important;
+    }
+    .markdown-section>p {
+      font-size: 16px !important;
+    }
+	
+	/*代码块头部图标 start*/
+    .markdown-section pre:before {
+      content: '';
+      display: block;
+      background: url(https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716201955.png);
+      height: 30px;
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-color: #1C1C1C;
+      background-position: 10px 10px;
+    }
+    /*代码块头部图标 end*/
+
+	.markdown-section pre>code {
+      color: #c0c3c1 !important;
+      font-family: 'Inconsolata', consolas,"PingFang SC", "Microsoft YaHei", monospace !important;
+      background-color: #212121 !important;    //#accfff  #282c34
+      font-size: 15px !important;
+      white-space: pre !important;
+      line-height: 1.5 !important;
+      -moz-tab-size: 4 !important;
+      -o-tab-size: 4 !important;
+      tab-size: 4 !important;
+      /*border-radius: .3em;*/
+    }
+	
+	ol, ul, li{
+      line-height: 27px !important;
+      font-size: 16px !important;
+    }
+    @media (min-width:600px) {
+      .markdown-section pre>code {
+        font-size: 15px !important;
+        letter-spacing: 1.1px !important;
+      }
+
+    }
+    @media (max-width:600px) {
+      .markdown-section pre>code {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 16px !important;
+      }
+      pre:after {
+        content: "" !important;
+      }
+    }
+    section.cover h1 {
+      margin: 0;
+    }
+
+    pre {
+      background-color: #212121 !important;
+    }
+
+    @media (min-width:600px) {
+      pre code {
+        /*box-shadow: 2px 1px 20px 2px #aaa;*/
+        /*border-radius: 10px !important;*/
+        padding-left: 20px !important;
+      }
+
+    }
+
+    @media (max-width:600px) {
+      pre {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        box-shadow: 0px 0px 20px 0px #f7f7f7 !important;
+      }
+
+      /*代码块复制按钮默认隐藏*/
+      .docsify-copy-code-button {
+        display: none;
+      }
+
+    }
+
+    @media (max-width:360px) {
+      .advertisement{
+        display: none;
+      }
+    }
+
+    .markdown-section pre {
+      padding-left: 0 !important;
+      padding-right: 0px !important;
+    }
+
+    .markdown-section {
+      margin: 0 3.2% !important;
+    }
+
+    /*修改代码块代码颜色显示*/
+    .token.directive.keyword{
+      color: #4faee2 !important;
+    }
+
+    .token.keyword{
+      color: #c678dd !important;
+    }
+	
+	
+	
+	/*滚动条样式 start*/
+    /* 滚动条宽度 */
+    ::-webkit-scrollbar{width:5px;}
+    /* 滚动条颜色 */
+    ::-webkit-scrollbar-thumb{
+      background: #33a9dc;
+      background-image: linear-gradient(#6ecd56, #33a9dc, #cb6196, #c16290);
+      border-radius: 2em;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">中文</a>
+  </nav>
+
+  <div id="app"></div>
+ 
+  <script>
+    window.$docsify = {
+      name: 'Ep流苏 Docs',
+	  nameLink: 'https://www.github.com/zsy0216',
+      repo: 'zsy0216',
+	  // loadSidebar: true,
+	  maxLevel: 6,
+	  coverpage: true,
+	  formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
+      plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function (html) {
+            var url = 'https://github.com/zsy0216' + vm.route.file
+              var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
+              var editHtml_end = '[🖊 Edit Document](' + url + ')\n'
+              return editHtml
+                   + html
+                   + '\n----\n'
+                   + '>docsify-updated  '
+                   + editHtml_end
+          })
+        }
+      ],
+	  footer: {
+		copy: '<span>Copyright &copy; 2020</span>',
+		auth: ' <a href="https://www.github.com/zsy0216 target="_blank">🏷️ Tassel Blog</a>',
+		pre: '<hr/>',
+		style: 'text-align: left;',
+	  },//添加页脚
+	  search: {
+        paths: 'auto',
+        placeholder: '🔍 搜索',
+        noData: '😒 找不到结果',
+        // Headline depth, 1 - 6
+        depth: 6,
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      },//添加搜索框
+
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/search.min.js"></script>
+
+  <!-- 复制代码-->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/docsify-copy-code.min.js"></script>
+  <!-- 代码高亮-->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-java.js"></script>
+</body>
+</html>
