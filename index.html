@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Ep流苏 'Docs</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  
+  <!-- 评论系统 Gitalk -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
   <style>
 
   
@@ -221,13 +224,14 @@
 	  nameLink: 'https://zsy0216.github.io/docs/#/?id=headline',
       repo: 'zsy0216/docs',
 	  // loadSidebar: true,
+	  loadNavbar: true,
 	  maxLevel: 6,
 	  coverpage: true,
 	  formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
    
 	  footer: {
 		copy: '<span>Copyright &copy; 2020</span>',
-		auth: ' <a href="https://www.github.com/zsy0216 target="_blank">🏷️ Tassel Blog</a>',
+		auth: ' 🏷️<a href="https://www.github.com/zsy0216/docs/issues/new/" target="_blank"> 任何问题请点击： Tassel Docs</a>',
 		pre: '<hr/>',
 		style: 'text-align: left;',
 	  },//添加页脚
@@ -245,10 +249,28 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/search.min.js"></script>
-
-  <!-- 复制代码-->
-  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/docsify-copy-code.min.js"></script>
-  <!-- 代码高亮-->
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-java.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- 图片缩放 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 复制代码 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!-- 代码高亮 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-java.min.js"></script>
+  
+  <!-- 评论系统 Gitalk
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+  const gitalk = new Gitalk({
+    clientID: 'Github Application Client ID',
+    clientSecret: 'Github Application Client Secret',
+    repo: 'docs',
+    owner: 'zsy0216',
+    admin: ['Github repo collaborators, only these guys can initialize github issues'],
+    // facebook-like distraction free mode
+    distractionFreeMode: false
+  })
+   -->
+</script>
 </body>
 </html>

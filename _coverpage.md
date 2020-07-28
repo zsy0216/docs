@@ -7,6 +7,8 @@
 
 > 缓慢而坚定地做自己力所能及的事.
 
+- 运行指令 `docsify serve docs`
+
 
 [GitHub](https://github.com/zsy0216/)
-[Get Started](https://zsy0216.github.io/docs/#/?id=headline)
+[Get Started](#headline "首页")
