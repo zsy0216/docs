@@ -222,27 +222,14 @@
  
   <script>
     window.$docsify = {
-      name: 'Ep流苏 Docs',
+      name: '📝Ep流苏 Docs',
 	  nameLink: 'https://zsy0216.github.io/docs/#/',
       repo: 'zsy0216/docs',
 	  // loadSidebar: true,
 	  maxLevel: 6,
 	  coverpage: true,
 	  formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
-      plugins: [
-        function(hook, vm) {
-          hook.beforeEach(function (html) {
-            var url = 'https://github.com/zsy0216' + vm.route.file
-              var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
-              var editHtml_end = '[🖊 Edit Document](' + url + ')\n'
-              return editHtml
-                   + html
-                   + '\n----\n'
-                   + '>docsify-updated  '
-                   + editHtml_end
-          })
-        }
-      ],
+   
 	  footer: {
 		copy: '<span>Copyright &copy; 2020</span>',
 		auth: ' <a href="https://www.github.com/zsy0216 target="_blank">🏷️ Tassel Blog</a>',
