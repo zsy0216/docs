@@ -1,7 +1,6 @@
 <!-- _coverpage.md ![logo](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/head2.jpg)-->
 
-![logo](https://docsify.js.org/_media/icon.svg)
-
+<img src="https://gitee.com/Ep_tassel/typora-image/raw/master/typora/head2.jpg" alt="head2" style="zoom:25%; border-radius:50%" />
 
 # Ep流苏
 
