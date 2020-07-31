@@ -6,13 +6,14 @@
 - ~~复制 LearnNotes~~
 - 整理封面内容
 - 优化首页显示内容
+:tada:
 
 代码块测试
 ```java
 Class HashMap {	
 	public static String sth = "123";
 }
-``` 
+```
 
 ### Java
 

@@ -1,4 +1,4 @@
-<!-- _coverpage.md ![logo](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/head2.jpg)-->
+<!-- _coverpage.md -->
 
 <img src="https://gitee.com/Ep_tassel/typora-image/raw/master/typora/head2.jpg" alt="head2" style="zoom:25%; border-radius:50%" />
 
@@ -11,3 +11,4 @@
 
 [GitHub](https://github.com/zsy0216/)
 [Get Started](#headline "首页")
+[Go Blog](/a-blog/)
