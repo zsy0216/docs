@@ -6,9 +6,9 @@
   * [Java 基础](/java-base/)
   * [Java Web](/java-web/)
   
-* Web前端
+* [Web前端](/web/)
 
-  * [ES6 基础]()
+  * [ES6 基础](/web/es6-introduce.md)
   * [Java 基础]()
 
 * [Blog](/blog/)
