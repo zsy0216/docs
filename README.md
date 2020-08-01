@@ -54,6 +54,6 @@ Class HashMap {
 
 [Linux 杂学](/linux/)
 
-[Git 分支](/git-branch/)
+[Git 学习笔记](/git/)
 
 [第三方插件](/第三方插件/)
