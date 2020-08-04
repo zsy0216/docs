@@ -31,9 +31,11 @@ Spring Cloud 生态！
 
 新一代一站式解决方案
 
+Nacos
 
 
-### 微服务新概念：服务网格 Server Mesh
+
+# 微服务新概念：服务网格 Server Mesh
 
 istio
 
@@ -66,9 +68,3 @@ SpringCloud 是分布式微服务架构下的一站式解决方案，是各个�
 - SpringCloud 是关注全局的微服务协调整理治理框架，它将 SpringBoot 开发的一个个单体微服务整合并管理起来，为各个微服务之间提供：配置管理、服务发现、断路器、路由、微代理、事件总线、全局锁、决策竞选、分布式会话等等集成服务。
 - SpringBoot 可以离开 SpringCloud 独立使用，开发项目，但是 SpringCloud 离不开 SpringBoot，属于依赖关系。
 - SpringBoot 专注于快速、方便地开发单个个体微服务，SpringCloud 专注于全局的服务治理框架。
-
-## Dubbo 和 SpringCloud 技术选型
-
-### 1. 分布式+服务治理 Dubbo
-
-目前成熟的互联网架构：应用服务化拆分 + 消息中间件
