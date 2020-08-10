@@ -21,7 +21,7 @@ CAP 原则，指的是在一个分布式系统中，`Consistency`(一致性)、`
 >
 > Eureka 满足了其中的 AP(高可用性)，Consul 和 Zookeeper 满足了其中的 CP(一致性)。
 
-Eureka
+# Eureka
 
 应用内，集成在应用中，不需要依赖其他的软件服务
 
@@ -29,7 +29,7 @@ Eureka
 
 AP 保证服务的可用性。Eureka 多实例采用互相注册的方式，当一台服务宕机，客户端请求会自动切换到新的Eureka Server 节点上。
 
-Zookeeper
+# Zookeeper
 
 需要安装额外的软件，对应用侵入性小
 
@@ -37,13 +37,13 @@ CP 保证任何时候的数据一致。
 
 集群环境需要选举Leader，当Leader宕机时，需要重新选举Leader，而在选举Leader的过程中，服务是不可用的。
 
-Consul
+# Consul
 
  Go开发 需要安装额外的软件对应用侵入性小
 
 CP 保证任何时候的数据一致。集群类似Zookeeper
 
-三者总结：
+# 三者总结：
 
 | 对比项      | Eureka   | Zookeeper | Consul   |
 | ----------- | -------- | --------- | -------- |
