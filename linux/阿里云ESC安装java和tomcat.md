@@ -1,8 +1,8 @@
 # JDK
 
-首先从官网上下载 jdk ----- `jdk-8u231-linux-x64.tar.gz` 
+首先从官网上下载 jdk ----- `jdk-8u231-linux-x64.tar.gz` 到`/opt` 目录。
 
-移动到服务器上的 `/usr/java` 目录下；
+并移动到服务器上的 `/usr/java` 目录下；
 
 解压：
 
@@ -16,7 +16,14 @@ tar -zxvf jdk-8u231-linux-x64.tar.gz
 rm -f jdk-8u231-linux-x64.tar.gz
 ```
 
-环境变量配置：
+移动到指定目录
+
+```shell
+mkdir /usr/java
+mv /opt/jdk1.8.0_231/ /usr/java/jdk1.8.0_231
+```
+
+**环境变量配置：** 
 
 vim编辑：
 

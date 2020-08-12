@@ -146,4 +146,8 @@ systemctl daemon-reload
 
 ## 9.VMware Workstation 网络问题
 
+!!! **确保 Windows 服务开启**：`VMware NAT Service` 
+
+Linux 使用 NAT 连接方式：--
+
 编辑--->虚拟网络编辑器--->选择下方更改配置(管理员权限)--->选择NAT模式---->DHCP设置
