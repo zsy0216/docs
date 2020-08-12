@@ -23,15 +23,15 @@
 
    之后会进入编辑界面，将配置文件中的文件名字修改为第一步修改的文件名即可.
 
-![1547386959864](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/updatedefaultname.png)
+![1547386959864](https://gitee.com/zsy0216/typora-image/raw/master/typora/updatedefaultname.png)
 
-![1547387162554](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/update2.png)
+![1547387162554](https://gitee.com/zsy0216/typora-image/raw/master/typora/update2.png)
 
 ## 2.centos安装gcc 之前的无法上网问题
 
 * 管理员身份输入命令：`ls /etc/sysconfig/network-scripts`
 
-  ![1551348870348](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/network-scripts.png)
+  ![1551348870348](https://gitee.com/zsy0216/typora-image/raw/master/typora/network-scripts.png)
 
 * 输入命令：`vi /etc/sysconfig/network-scripts/ifcfg-ens33`
 
@@ -39,7 +39,7 @@
 
 * 修改`BOOTPROTO=dhcp，ONBOOT=yes`
 
-  ![1551348980004](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/network.png)
+  ![1551348980004](https://gitee.com/zsy0216/typora-image/raw/master/typora/network.png)
 
 * 修改完成后 先按Esc键，再输入冒号（：），然后输入wq，最后按回车键方可退出vim编辑器
 

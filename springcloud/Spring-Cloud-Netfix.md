@@ -52,7 +52,7 @@ istio
 
 Spring官网：https://spring.io/
 
-![](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/202003/29/160303-245633.png)
+![](https://gitee.com/zsy0216/typora-image/raw/master/typora/202003/29/160303-245633.png)
 
 SpringCloud 基于SpringBoot提供了一套微服务解决方案，包括服务注册与发现，配置中心，全链路监控，服务网关，负载均衡，熔断器等组件，除了基于NetFilx的开源组件做高度抽象封装之外，还有一些选型中立的开源组件。
 

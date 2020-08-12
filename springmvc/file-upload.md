@@ -117,5 +117,5 @@ public String testFileUpload(MultipartFile file, HttpServletRequest request, Mod
 
 - 上传成功页面，此页面如代码中所示，显示图片的访问路径和图片
 
-![](https://raw.githubusercontent.com/zsy0216/image/master/notes/20191207183211.png)
+![](https://zsy0216.github.io/image/notes/20191207183211.png)
 

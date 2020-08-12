@@ -45,4 +45,4 @@ select sth from a join b on a.column = b.column
 
 ## sql 连接图示
 
-![1.jpg](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/ad3df1c4ecc7d2dbe85f92cdde8ec9a731fdd20dc4c5629ecb372b21de26c682-1.jpg)
+![1.jpg](https://gitee.com/zsy0216/typora-image/raw/master/typora/ad3df1c4ecc7d2dbe85f92cdde8ec9a731fdd20dc4c5629ecb372b21de26c682-1.jpg)

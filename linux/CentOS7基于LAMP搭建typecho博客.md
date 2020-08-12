@@ -77,7 +77,7 @@ LAMP = Linux + Apache + MySQL + PHP
 
 解决了防火墙的问题就可以试着访问一下了。如果不出意外的话应该看到这个界面：
 
-![apache_test](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/apache_test.png)
+![apache_test](https://gitee.com/zsy0216/typora-image/raw/master/typora/apache_test.png)
 
 
 
@@ -93,7 +93,7 @@ LAMP = Linux + Apache + MySQL + PHP
 
 访问你服务器的ip地址：
 
-![index_html](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/index_html.png)
+![index_html](https://gitee.com/zsy0216/typora-image/raw/master/typora/index_html.png)
 
 至此，Apache 基本搞定了。
 
@@ -130,7 +130,7 @@ LAMP = Linux + Apache + MySQL + PHP
 
   如下图所示表名安装成功
 
-  ![apache_repo](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/mysql_repo.png)
+  ![apache_repo](https://gitee.com/zsy0216/typora-image/raw/master/typora/mysql_repo.png)
 
 - 安装mysql-community-server
 
@@ -166,7 +166,7 @@ LAMP = Linux + Apache + MySQL + PHP
   [root@centos7 ~]# grep 'temporary password' /var/log/mysqld.log
   ```
 
-  ![mysql_root_tempPasswd](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/mysql_root_tempPasswd.png)
+  ![mysql_root_tempPasswd](https://gitee.com/zsy0216/typora-image/raw/master/typora/mysql_root_tempPasswd.png)
 
   ```shell
   [root@centos7 ~]# mysql -uroot -p
@@ -245,7 +245,7 @@ LAMP = Linux + Apache + MySQL + PHP
 
   浏览器访问 http://{你的IP}/info.php
 
-  ![phpinfo](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/phpinfo.png)
+  ![phpinfo](https://gitee.com/zsy0216/typora-image/raw/master/typora/phpinfo.png)
 
   如图表示PHP安装成功。
 
@@ -288,21 +288,21 @@ LAMP = Linux + Apache + MySQL + PHP
 
 - 下一步。
 
-![typecho](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/typecho_index.png)
+![typecho](https://gitee.com/zsy0216/typora-image/raw/master/typora/typecho_index.png)
 
 接下来就是可视化的安装了，下面是截图：
 
 - 输入数据库用户名和数据库密码(这里是配置mysql的时候为typecho创建的新用户或root用户)
 
-![typecho1](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/typecho1.png)
+![typecho1](https://gitee.com/zsy0216/typora-image/raw/master/typora/typecho1.png)
 
 - 管理员账号密码设置，用户登录后台admin页面
 
-![typecho2](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/typecho2.png)
+![typecho2](https://gitee.com/zsy0216/typora-image/raw/master/typora/typecho2.png)
 
 - 开始安装
 
-![typecho3](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/typecho3.png)
+![typecho3](https://gitee.com/zsy0216/typora-image/raw/master/typora/typecho3.png)
 
 - 这里需要手动创建 config.inc.php，把提供的数据库配置复制并新建配置文件。
 
@@ -383,11 +383,11 @@ LAMP = Linux + Apache + MySQL + PHP
 
   
 
-![typecho_config](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/typecho_config.png)
+![typecho_config](https://gitee.com/zsy0216/typora-image/raw/master/typora/typecho_config.png)
 
 - 继续
 
-![typecho_success](https://gitee.com/Ep_tassel/typora-image/raw/master/typora/typecho_succeess.png)
+![typecho_success](https://gitee.com/zsy0216/typora-image/raw/master/typora/typecho_succeess.png)
 
 至此，Typecho 安装成功！
 
