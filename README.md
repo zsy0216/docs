@@ -41,4 +41,4 @@ Class HashMap {
 
 | Git                   | REST                              | Third-Kit                  |
 | --------------------- | --------------------------------- | -------------------------- |
-| [Git 学习笔记](/git/) | [PostWoman](/tools/post-woman.md) | [第三方插件](/第三方插件/) |
+| [Git 学习笔记](/git/) | [PostWoman](/tools/post-woman.md) | [第三方插件](/third-kits/) |

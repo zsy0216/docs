@@ -1,3 +1,5 @@
+> 在实际分布式架构中，应用不能总是知道其他服务的确切位置。服务注册中心(such as [Netflix Eureka](https://github.com/Netflix/eureka), or a sidecar solution, such as [HashiCorp Consul](https://www.consul.io/))可以提供帮助。Spring Cloud 为流行的注册中心(such as [Eureka](https://spring.io/projects/spring-cloud-netflix), [Consul](https://spring.io/projects/spring-cloud-consul), [Zookeeper](https://spring.io/projects/spring-cloud-zookeeper), and even [Kubernetes'](https://spring.io/projects/spring-cloud-kubernetes) built-in system)提供了 `DiscoveryClient` 实现。还有  [Spring Cloud Load Balancer](https://spring.io/guides/gs/spring-cloud-loadbalancer/) 帮你在服务实例之间实现负载均衡。
+
 # 服务注册与发现
 
 顾名思义，分布式系统中服务注册与发现主要解决的就是两个问题：
