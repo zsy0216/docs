@@ -8,8 +8,13 @@
 - [Java 注解与反射](/java-base/05.Java注解与反射.md) - [X]
 - [Java 集合](/java-base/06.Java集合.md)
 
+# Java 工具包学习
+- [Guava](/java-base/Guava.md)
+- [Hutool]
+
 Java 8 学习：
 
 > [菜鸟教程-Java8 新特性](https://www.runoob.com/java/java8-new-features.html) 
 >
 > [恕我直言: 你可能真的不会Java](https://www.kancloud.cn/hanxt/javacrazy/content) 
+
