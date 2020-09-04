@@ -18,3 +18,6 @@ Java 8 学习：
 >
 > [恕我直言: 你可能真的不会Java](https://www.kancloud.cn/hanxt/javacrazy/content) 
 
+# Java 源码学习工具
+
+- [在 Idea 中学习 Java 源码](/java-base/idea-java-source.md)
