@@ -2,15 +2,15 @@
 
 ## 基本提交命令
 ```shell
-	git add .
-	git commit -m "message"
-	git push
+git add .
+git commit -m "message"
+git push
 ```
 
 ## 提交后如何撤销 commit
 
 ```shell
-	git reset --soft HEAD^
+git reset --soft HEAD^
 ```
 
 HEAD^的意思是上一个版本，也可以写成HEAD~1
@@ -35,3 +35,17 @@ HEAD^的意思是上一个版本，也可以写成HEAD~1
   ```shell
 	git commit --amend
   ```
+
+## Git 版本回退 （另一个版本）
+
+```shell
+git reset --hard HEAD^
+```
+
+或
+
+```shell
+git reset --hard commitID
+```
+
+commitId 可以通过 `git reflog` 查看
