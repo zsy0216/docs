@@ -1,4 +1,5 @@
 # Redis 学习
 
-- [Redis 简单入门](/redis/redis-introduction.md)
+- [Redis 简单入门](/redis/redis-introduction.md) 
+- [Spring 整合 Redis](/redis/redis-spring-boot) 
 
