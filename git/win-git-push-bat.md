@@ -9,26 +9,26 @@ git add .    git commit -m ""     git push ......
 **请在第二行换成你的本地工作目录**
 
 ```bash
-echo "Move to working directory"
+@echo off
+echo "DOCS PUSH BAT"
+
+echo "1. Move to working directory" 
+E:
 cd E:\docs
 
-echo "Start submitting code to the local repository"
-echo "The current directory is：%cd%"
+echo "2. Start submitting code to the local repository"
 git add *
-echo;
  
-echo "Commit the changes to the local repository"
+echo "3. Commit the changes to the local repository"
 set now=%date% %time%
-echo %now%
+echo "Time:" %now%
 git commit -m "%now%"
-echo;
  
-echo "Commit the changes to the remote git server"
+echo "4. Push the changes to the remote git server"
 git push
-echo;
  
 echo "Batch execution complete!"
-echo;
+pause
 ```
 
 需要提交时直接双击运行即可。
