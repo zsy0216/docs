@@ -1,6 +1,6 @@
 # JVM
 
-> https://www.bilibili.com/video/BV1yE411Z7AP
+> 学习地址：[解密 JVM](https://www.bilibili.com/video/BV1yE411Z7AP)
 
 # 0.什么是JVM
 
@@ -238,3 +238,20 @@ StringTable在内存紧张时，会发生垃圾回收
   - 方法区中类静态属性引用的对象
   - 方法区中常量引用的对象
   - 本地方法栈中JNI（即一般说的Native方法）引用的对象
+
+### 四种引用
+
+1. 强引用
+- 只有所有 GC Roots 对象都不通过【强引用】引用该对象，该对象才能被垃圾回收；
+2. 软引用（SoftReference）
+  - 仅有软引用引用该对象时，在垃圾回收后，内存仍不足时会再次出发垃圾回收，回收软引用对象；
+  - 可以配合引用队列来释放软引用自身内存；
+3. 弱引用（WeakReference）
+  - 仅有弱引用引用该对象时，在垃圾回收时，无论内存是否充足，都会回收弱引用对象；
+  - 可以配合引用队列来释放弱引用自身内存；
+4. 虚引用（PhantomReference）
+  - 必须配合引用队列使用，主要配合 ByteBuffer 使用，被引用对象回收时，会将虚引用入队，由Reference Handler 线程调用虚引用相关方法释放直接内存
+5. 终结器引用（FinalReference）
+  - 无需手动编码，但其内部配合引用队列使用，在垃圾回收时，终结器引用入队（被引用对象暂时没有被回收），再由 Finalizer 线程通过终结器引用找到被引用对象并调用它的 finalize方法，第二次 GC 时才能回收被引用对象
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608150800.png)
