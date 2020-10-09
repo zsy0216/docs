@@ -1,6 +1,6 @@
 ### Headline
 
-> An awesome project.
+> 学习文档记录.
 #### TODO
 - navbar
 - ~~复制 LearnNotes~~
