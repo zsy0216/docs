@@ -231,13 +231,13 @@ StringTable在内存紧张时，会发生垃圾回收
 
 ### 可达性分析算法
 
-- JVM中的垃圾回收器通过**可达性分析**来探索所有存活的对象
-- 扫描堆中的对象，看能否沿着GC Root对象为起点的引用链找到该对象，如果**找不到，则表示可以回收**
-- 可以作为GC Root的对象
+- JVM 中的垃圾回收器通过**可达性分析**来探索所有存活的对象
+- 扫描堆中的对象，看能否沿着 GC Root 对象为起点的引用链找到该对象，如果**找不到，则表示可以回收**
+- 可以作为 GC Root 的对象
   - 虚拟机栈（栈帧中的本地变量表）中引用的对象。　
   - 方法区中类静态属性引用的对象
   - 方法区中常量引用的对象
-  - 本地方法栈中JNI（即一般说的Native方法）引用的对象
+  - 本地方法栈中 JNI（即一般说的 Native 方法）引用的对象
 
 ### 四种引用
 
@@ -288,3 +288,33 @@ StringTable在内存紧张时，会发生垃圾回收
 ![image-20201011195537512](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20201011195537512.png)
 
 将内存分为相同大小的两个区域，FROM 和 TO（TO 区域为空）。现将被 GC Root 引用的对象（不会被垃圾回收）从 FROM 放入 TO 中，再回收 FROM 中剩余的不被 GC Root 引用的将要被回收的对象。然后交换 FROM 和 TO。这样也可以避免内存碎片的问题，但是会占用双倍的内存空间。
+
+## 分代回收
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608150931.png)
+
+**回收流程**
+
+新创建的对象都放在了新生代的伊甸园中
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608150939.png)
+
+当伊甸园中的内存不足时，就会进行一次垃圾回收，这时的回收叫做 **Minor** **GC**
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608150946.png)
+
+Minor GC 会将伊甸园和幸存区 FROM 存活的对象先复制到 幸存区 TO 中， 并让其寿命加 1，再交换两个幸存区
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608150955.png)
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608151002.png)
+
+再次创建对象，若新生代的伊甸园又满了，则会再次触发 Minor GC（会触发 stop the world， 暂停其他用户线程，只让垃圾回收线程工作），这时不仅会回收伊甸园中的垃圾，还会回收幸存区中的垃圾，再将活跃对象复制到幸存区 TO 中。回收以后会交换两个幸存区，并让幸存区中的对象寿命加 1
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608151010.png)
+
+如果幸存区中的对象的**寿命超过某个阈值**（最大为15，4bit），就会被**放入老年代**中
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608151018.png)
+
+如果新生代老年代中的内存都满了，就会先触发 Minor Gc，再触发 **Full GC**，扫描**新生代和老年代中**所有不再使用的对象并回收
