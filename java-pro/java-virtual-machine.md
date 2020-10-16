@@ -341,6 +341,29 @@ Minor GC 会将伊甸园和幸存区 FROM 存活的对象先复制到 幸存区 
 
 ### 串行
 
+- 单线程
+- 堆内存较小，适合个人电脑(CUP 核心数少)
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608151027.png)
+
+**安全点**：让其他线程都在这个点停下来，以免垃圾回收时移动对象地址，使得其他线程找不到被移动的对象
+
+因为是串行的，所以只有一个垃圾回收线程。且在该线程执行回收工作时，其他线程进入**阻塞**状态
+
 ### 吞吐量优先
 
+- 多线程
+- 堆内存较大，多核 CPU
+- 单位时间内，STW 时间最短
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608151039.png)
+
+
+
 ### 响应时间优先
+
+- 多线程
+- 堆内存较大，多核 CPU
+- 尽可能让单次 STW 时间最短(尽量不影响其他线程运行)
+
+![img](https://gitee.com/zsy0216/typora-image/raw/master/typora/20200608151052.png)
