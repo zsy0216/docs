@@ -14,7 +14,7 @@ echo "DOCS PUSH BAT"
 
 echo "1. Move to working directory" 
 E:
-cd E:\docs
+cd E:\document\docs
 
 echo "2. Start submitting code to the local repository"
 git add *
