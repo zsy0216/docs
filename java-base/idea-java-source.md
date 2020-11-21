@@ -41,3 +41,7 @@
    +当前工程 com.zsy.source 包
 
    -%JAVA_HOME%/src.zip
+   
+4. com 包和 launcher 包编译时报错问题
+
+   删除 com 包 和 launcher 包
