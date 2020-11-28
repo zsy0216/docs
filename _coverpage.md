@@ -10,5 +10,5 @@
 
 
 [GitHub](https://github.com/zsy0216/)
-[Get Started](#headline "首页")
 [Go Blog](/blog/)
+[Get Started](#headline "首页")
