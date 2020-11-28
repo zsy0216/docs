@@ -2,24 +2,13 @@
 
 > 学习文档记录.
 #### TODO
-- navbar
-- ~~复制 LearnNotes~~
-- 整理封面内容
-- 优化首页显示内容
 :tada:
-
-代码块测试
-```java
-Class HashMap {	
-	public static String sth = "123";
-}
-```
 
 ## Java
 
-| Java 面试题                     | Java 基础🎈                   | Java Web🎈              |
-| ------------------------------- | ---------------------------- | ---------------------- |
-| [Java 面试题总结](/Java面试题/) | [Java 基础语法](/java-base/) | [Java Web](/java-web/) |
+| Java 面试题                     | Java 基础🎈                   | Java 进阶🎈              | Java Web🎈              |
+| ------------------------------- | ---------------------------- | ----------------------- | ---------------------- |
+| [Java 面试题总结](/Java面试题/) | [Java 基础语法](/java-base/) | [Java 进阶](/java-pro/) | [Java Web](/java-web/) |
 
 ## Mysql
 
@@ -29,16 +18,20 @@ Class HashMap {
 
 ## Spring
 
-| SpringMVC                         | SpringBoot                      | SpringCloud                  | SpringBatch                           |
-| --------------------------------- | ------------------------------- | ---------------------------- | ------------------------------------- |
-| [SpringMVC 功能实现](/springmvc/) | [SpringBoot 学习](/springboot/) | [SpringCloud](/springcloud/) | [SpringBatch 官网翻译](/springbatch/) |
+| SpringMVC                         | Spring                  | SpringBoot                      | SpringCloud                  | SpringBatch                           |
+| --------------------------------- | ----------------------- | ------------------------------- | ---------------------------- | ------------------------------------- |
+| [SpringMVC 功能实现](/springmvc/) | [Spring 学习](/Spring/) | [SpringBoot 学习](/springboot/) | [SpringCloud](/springcloud/) | [SpringBatch 官网翻译](/springbatch/) |
 
 ## Linux
 
 [Linux 杂学](/linux/)
 
+## 中间件
+
+[Redis](/redis/)
+
 ## sth
 
-| Git                   | REST                              | Third-Kit                  |
-| --------------------- | --------------------------------- | -------------------------- |
-| [Git 学习笔记](/git/) | [PostWoman](/tools/post-woman.md) | [第三方插件](/third-kits/) |
+| Git                   | REST                              | Third-Kit                  | IDE 配置                        |
+| --------------------- | --------------------------------- | -------------------------- | ------------------------------- |
+| [Git 学习笔记](/git/) | [PostWoman](/tools/post-woman.md) | [第三方插件](/third-kits/) | [IDE 设置与插件](/IDE-Setting/) |
