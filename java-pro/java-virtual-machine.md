@@ -1,6 +1,8 @@
 # JVM
 
 > 学习地址：[解密 JVM](https://www.bilibili.com/video/BV1yE411Z7AP)
+>
+> 参考文档：https://nyimac.gitee.io/2020/06/08/JVM%E5%AD%A6%E4%B9%A0/
 
 # 0.什么是JVM
 
