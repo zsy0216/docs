@@ -27,8 +27,26 @@ Transparent native-to-ascii conversion 勾选避免 Properties 等文件中的�
 
 ![image-20201121110417297](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20201121110417297.png)
 
+## 在工具栏增加 git push 按钮
+
+`File--->Settings--->Appearance & Behavior ---> Menus and ToolBars--->Navigation Bar Toolbar--->NavBarVcsGroup--->VcsNavBarToobarActions` 
+
+![image-20201204220425005](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20201204220425005.png)
+
+点击 + 号，选择 `Add Action -> version Control Systems--->Git--->Repository` 选择push按钮，然后调整出现的位置即可
+
 ## 设置默认换行符
 
 `Setting -> Editor -> Code Style` 
 
 ![image-20201125212402096](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20201125212402096.png)
+
+## 设置注释起始位置不在第一行
+
+`Setting -> Editor -> Code Style -> Java -> Code Generation -> Comment Code` 
+
+取消勾选 Line comment at first column
+
+*可能误操作 Override Method Signature --- Repeat synchronized modifer* 
+
+![image-20201217211256498](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20201217211256498.png)
