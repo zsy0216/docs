@@ -7,6 +7,7 @@
 - [Java 数组](/java-base/04.Java数组.md)
 - [Java 注解与反射](/java-base/05.Java注解与反射.md) - [X]
 - [Java 集合](/java-base/06.Java集合.md)
+- [Java 常用类、集合、多线程、IO流](/java-base/JavaSE.md)
 
 # Java 工具包学习
 - [Guava](/java-base/Guava.md)
