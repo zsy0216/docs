@@ -63,14 +63,14 @@ vim /etc/profile
 
 #文件最后加上：
 # tomcat8.5.51
-export CATALINA_HOME=/usr/java/tomcat8.5.51
-export CATALINA_BASE=/usr/java/tomcat8.5.51
-#export TOMCAT_HOME=/usr/java/tomcat8.5.51
+export CATALINA_HOME=/opt/java/tomcat8.5.51
+export CATALINA_BASE=/opt/java/tomcat8.5.51
+#export TOMCAT_HOME=/opt/java/tomcat8.5.51
 export PATH=$PATH:$CATALINA_BASE/bin:$PATH
 
 #使生效
 source /etc/profile
 #验证
-cd /usr/java/tomcat8.5.51/bin
+cd /opt/java/tomcat8.5.51/bin
 ./startup.sh
 ```

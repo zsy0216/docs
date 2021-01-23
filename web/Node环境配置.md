@@ -37,24 +37,28 @@ Win+R -> CMD
 
 ![image-20210108112529858](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20210108112529858.png)
 
-# 5. 设置npm全局路径及cache路径
+# 5. 设置npm cache路径
 
-在nodejs路径下创建node_global 和 node_cache两个文件夹；
+在nodejs路径下创建node_cache文件夹；
 
 cmd 命令，分别输入如下命令
 
 ```shell
-npm config set prefix "D:\devtools\node-v14.15.4\node_global"
-
 npm config set cache"D:\devtools\node-v14.15.4\node_cache"
 ```
 
 # 其他配置
 
-## 设置淘宝源
+## 淘宝cnpm
 
 ```shell
 npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+## 设置淘宝源
+
+```shell
+npm config set registry https://registry.npm.taobao.org
 ```
 
 ## 安装 yarn
