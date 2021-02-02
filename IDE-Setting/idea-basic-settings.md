@@ -39,6 +39,8 @@ Transparent native-to-ascii conversion 勾选避免 Properties 等文件中的�
 
 `Setting -> Editor -> Code Style` 
 
+选择 Line separator 为想要的系统换行符
+
 ![image-20201125212402096](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20201125212402096.png)
 
 ## 设置注释起始位置不在第一行
@@ -50,3 +52,11 @@ Transparent native-to-ascii conversion 勾选避免 Properties 等文件中的�
 *可能误操作 Override Method Signature --- Repeat synchronized modifer* 
 
 ![image-20201217211256498](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20201217211256498.png)
+
+## 设置Lombok Annotation Processors 注解处理器
+
+`Setting -> Build,Execution,Deployment -> Compiler -> Annotation Processors` 
+
+勾选 Enable annotation processing
+
+![image-20210202095514205](https://gitee.com/zsy0216/typora-image/raw/master/typora/image-20210202095514205.png)
