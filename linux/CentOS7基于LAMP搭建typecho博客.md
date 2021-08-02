@@ -26,7 +26,7 @@ LAMP = Linux + Apache + MySQL + PHP
 - 启动httpd服务
   
   ```shell
-[roo@centos7 ~]# systemctl start httpd
+  [roo@centos7 ~]# systemctl start httpd
   ```
   
 - 查看httpd服务状态
@@ -170,11 +170,12 @@ LAMP = Linux + Apache + MySQL + PHP
 
   ```shell
   [root@centos7 ~]# mysql -uroot -p
+  
   mysql> ALTER USER root@localhost IDENTIFIED BY 'Test123.';
   或者
   mysql> set password for 'root'@'localhost'=password('Test123.'); 
   ```
-
+  
   > 注意：mysql5.7默认安装了密码安全检查插件（validate_password），默认密码检查策略要求密码必须包含：大小写字母、数字和特殊符号，并且长度不能少于8位。否则会提示ERROR 1819 (HY000): Your password does not satisfy the current policy requirements错误。
 
 既然要搭建博客，那博客的一些数据就要存在数据库中，在typecho搭建时需要指定数据库和数据库用户，所以接下来：
